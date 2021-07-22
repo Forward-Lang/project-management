@@ -8,7 +8,7 @@ where the X-axis is each task,
 while the Y-axis is the timeline (could be days, weeks, months, etc.).  
 The magnitude of each bar is the duration of the task.  
 
-A task may have a start- and end-date,  
+A task may have a start- and due-date,  
 it may also have an indication of its progress,  
 and its dependencies.  
 
@@ -36,7 +36,7 @@ Start to Start, and Finish to Finish, allow for parallel execution of tasks.
 ![GanttChartAnatomy](https://upload.wikimedia.org/wikipedia/commons/5/57/GanttChartAnatomy.svg)
 
 
-### Examples with no sub-tasks
+#### Examples with no sub-tasks
 
 In a traditional approach, you might have:
 
@@ -69,7 +69,7 @@ Finally here is an example using StS and FtS
 2. Step two, FtS, depends on Step one being finished 
 3. Step three, StS, depends on Step two starting
 
-### Examples with sub-tasks
+#### Examples with sub-tasks
 
 Here is an example with sub-tasks:
 
@@ -95,6 +95,20 @@ Here is an example using StS, FtS, and FtF
   3. Step three, StS, depends on Step two starting
 2. Celebrate Project A's completion, FtF, depends on Step one being finished 
 
+
+#### Implications of Start- and Due-dates
+
+* Start to Start: Start-date depends on another task
+* Start to Finish: Due-date depends on another task
+* Finish to Start: Start-date depends on another task
+* Finish to Finish: Due-date depends on another task
+
+|Type|Start|Due|
+|----|-----|---|
+|StS | X   |   |
+|StF |     | X |
+|FtS | X   |   |
+|FtF |     | X |
 
 
 
