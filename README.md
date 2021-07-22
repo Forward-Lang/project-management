@@ -36,7 +36,7 @@ Start to Start, and Finish to Finish, allow for parallel execution of tasks.
 ![GanttChartAnatomy](https://upload.wikimedia.org/wikipedia/commons/5/57/GanttChartAnatomy.svg)
 
 
-### Example
+### Example with no sub-tasks
 
 In a traditional approach, you might have:
 
@@ -49,6 +49,8 @@ Step two is started when Step one is done,
 Step three is started when Step two is done;  
 ie this is an __ordered__ list.  
 
+-----------------------------------------------------
+
 Here is another example that perhaps better represents github issues:
 
 * Task A 
@@ -59,9 +61,43 @@ This is an __un-ordered__ list.
 Tasks are completed in any order,  
 no dependency between them is specified.  
 
+-----------------------------------------------------
+
+Finally here is an example using StS and FtS
+
 1. Step one, start here, no dependencies
 2. Step two, FtS, depends on Step one being finished 
 3. Step three, StS, depends on Step two starting
+
+### Example with sub-tasks
+
+Here is an example with sub-tasks:
+
+* Task A 
+  * Task B
+  * Task C
+* Task D
+* Task E
+
+Using the 100% rule,
+Task A wouldn't be complete until both Task B and C are completed.
+
+Ignoring the 100% rule,
+
+
+-----------------------------------------------------
+
+Here is an example using StS, FtS, and FtF
+
+1. Project A
+  1. Step one, start here, no dependencies
+  2. Step two, FtS, depends on Step one being finished 
+  3. Step three, StS, depends on Step two starting
+2. Celebrate Project A's completion, FtF, depends on Step one being finished 
+
+
+
+
 
 ## Github issues
 https://docs.github.com/en/rest/reference/issues#list-repository-issues
@@ -70,3 +106,4 @@ https://docs.github.com/en/rest/reference/issues#list-repository-issues
 ## For more info see:
 - https://en.wikipedia.org/wiki/Gantt_chart
 - https://en.wikipedia.org/wiki/Work_breakdown_structure
+- https://en.wikipedia.org/wiki/Dependency_(project_management)
