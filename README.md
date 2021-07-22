@@ -25,7 +25,6 @@ a project definition should contain 100% of the necessary actions to complete th
 
 ### Time-dependencies
 
-![GanttChartAnatomy](https://en.wikipedia.org/wiki/File:GanttChartAnatomy.svg)
 
 * Start to Start: When Task A starts then Task B starts
 * Finish to Start: When Task A finishes then Task B starts
@@ -33,6 +32,9 @@ a project definition should contain 100% of the necessary actions to complete th
 
 Finish to Start, is the traditional sequential approach to task management.
 Start to Start, and Finish to Finish, allow for parallel execution of tasks.
+
+![GanttChartAnatomy](https://upload.wikimedia.org/wikipedia/commons/5/57/GanttChartAnatomy.svg)
+
 
 ## Github issues
 https://docs.github.com/en/rest/reference/issues#list-repository-issues
