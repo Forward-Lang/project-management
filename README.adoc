@@ -57,7 +57,7 @@ Step two is started when Step one is done,  +
 Step three is started when Step two is done;  +
 ie this is an __ordered__ list.  +
 
-:-----------------------------------------------------
+- - -
 
 Here is another example that perhaps better represents github issues:
 
@@ -69,7 +69,7 @@ This is an __un-ordered__ list.  +
 Tasks are completed in any order,  +
 no dependency between them is specified.  +
 
-:-----------------------------------------------------
+- - -
 
 Finally here is an example using StS and FtS
 
@@ -93,7 +93,7 @@ Task A wouldn't be complete until both Task B and C are completed.
 Ignoring the 100% rule, [TODO]
 
 
-:-----------------------------------------------------
+- - -
 
 Here is an example using StS, FtS, and FtF
 
