@@ -1,4 +1,6 @@
 # project-management
+:toc: preamble
+
 Create a Gantt Chart from Github issues
 
 ## Gantt charts
@@ -166,7 +168,7 @@ this is how I would specify it:
 https://docs.github.com/en/rest/reference/issues#list-repository-issues
 
 
-## For more info see:
+## For more info, see:
 - https://en.wikipedia.org/wiki/Gantt_chart
 - https://en.wikipedia.org/wiki/Work_breakdown_structure
 - https://en.wikipedia.org/wiki/Dependency_(project_management)
