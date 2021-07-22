@@ -90,7 +90,7 @@ Here is an example with sub-tasks:
 Using the 100% rule,
 Task A wouldn't be complete until both Task B and C are completed.
 
-Ignoring the 100% rule,
+Ignoring the 100% rule, [TODO]
 
 
 :-----------------------------------------------------
