@@ -80,8 +80,8 @@ Finally here is an example using StS and FtS
 Here is an example with sub-tasks:
 
 * Task A 
-  * Task B
-  * Task C
+** Task B
+** Task C
 * Task D
 * Task E
 
@@ -95,11 +95,11 @@ Ignoring the 100% rule,
 
 Here is an example using StS, FtS, and FtF
 
-1. Project A
-  1. Step one, start here, no dependencies
-  2. Step two, FtS, depends on Step one being finished 
-  3. Step three, StS, depends on Step two starting
-2. Celebrate Project A's completion, FtF, depends on Step one being finished 
+. Project A
+.. Step one, start here, no dependencies
+.. Step two, FtS, depends on Step one being finished 
+.. Step three, StS, depends on Step two starting
+. Celebrate Project A's completion, FtF, depends on Step one being finished 
 
 
 #### Implications of Start- and End-dates
@@ -109,13 +109,15 @@ Here is an example using StS, FtS, and FtF
 * Finish to Start: Start-date depends on another task
 * Finish to Finish: End-date depends on another task
 
-|Dependency|Start       |End         |
-|----------|------------|------------|
-|None      | YYYY-MM-DD | YYYY-MM-DD |
-|StS       | Depends on |            |
-|StF       |            | Depends on |
-|FtS       | Depends on |            |
-|FtF       |            | Depends on |
+|====
+|Dependency|Start       |End        
+
+|None      | YYYY-MM-DD | YYYY-MM-DD 
+|StS       | Depends on |            
+|StF       |            | Depends on 
+|FtS       | Depends on |            
+|FtF       |            | Depends on 
+|====
 
 
 #### Format
@@ -145,17 +147,17 @@ ends when the last child task ends.
 If I had to create a Gantt chart from a simple markdown list,
 this is how I would specify it:
 
-1. Task A: Starts with Task B, Ends with Task D
-  1. Task B: 
-  2. Task C: Starts on completion of Task B 
-  3. Task D: Starts on completion of Task C
-2. Task E: Starts on completion of Task A & Starts with Task F, Ends with Task G
-  1. Task F: 
-  2. Task G: Starts on completion of Task F
-3. Task H: Starts on completion of Task E
-  * Task I
-  * Task J
-  * Task K
+. Task A: Starts with Task B, Ends with Task D
+.. Task B: 
+.. Task C: Starts on completion of Task B 
+.. Task D: Starts on completion of Task C
+. Task E: Starts on completion of Task A & Starts with Task F, Ends with Task G
+.. Task F: 
+.. Task G: Starts on completion of Task F
+. Task H: Starts on completion of Task E
+** Task I
+** Task J
+** Task K
 
 
 
