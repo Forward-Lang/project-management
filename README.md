@@ -8,9 +8,12 @@ where the X-axis is each task,
 while the Y-axis is the timeline (could be days, weeks, months, etc.).  
 The magnitude of each bar is the duration of the task.  
 
-A task may have a start- and due-date,  
+A task may have a start- and end-date,  
 it may also have an indication of its progress,  
 and its dependencies.  
+
+> NB: A task's start- and end-date,  
+> are __not__ the same as its creation- and due-date.
 
 For defining dependencies and in turn progress,  
 Gantt charts usually rely on a work-breakdown structure.  
@@ -96,14 +99,14 @@ Here is an example using StS, FtS, and FtF
 2. Celebrate Project A's completion, FtF, depends on Step one being finished 
 
 
-#### Implications of Start- and Due-dates
+#### Implications of Start- and End-dates
 
 * Start to Start: Start-date depends on another task
-* Start to Finish: Due-date depends on another task
+* Start to Finish: End-date depends on another task
 * Finish to Start: Start-date depends on another task
-* Finish to Finish: Due-date depends on another task
+* Finish to Finish: End-date depends on another task
 
-|Type|Start|Due|
+|Type|Start|End|
 |----|-----|---|
 |StS | X   |   |
 |StF |     | X |
