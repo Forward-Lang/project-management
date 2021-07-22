@@ -36,7 +36,7 @@ Start to Start, and Finish to Finish, allow for parallel execution of tasks.
 ![GanttChartAnatomy](https://upload.wikimedia.org/wikipedia/commons/5/57/GanttChartAnatomy.svg)
 
 
-### Example with no sub-tasks
+### Examples with no sub-tasks
 
 In a traditional approach, you might have:
 
@@ -69,7 +69,7 @@ Finally here is an example using StS and FtS
 2. Step two, FtS, depends on Step one being finished 
 3. Step three, StS, depends on Step two starting
 
-### Example with sub-tasks
+### Examples with sub-tasks
 
 Here is an example with sub-tasks:
 
