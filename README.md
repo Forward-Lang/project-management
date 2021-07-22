@@ -122,7 +122,7 @@ Here is an example using StS, FtS, and FtF
 Issue `#25`
 
 ```yml
-depends on: #14
+depends on: #14 completion
 start: YYYY-MM-DD
 end:   YYYY-MM-DD
 
