@@ -110,12 +110,24 @@ Here is an example using StS, FtS, and FtF
 
 |Dependency|Start       |End         |
 |----------|------------|------------|
-|None      | YYYY:MM:DD | YYYY:MM:DD |
+|None      | YYYY-MM-DD | YYYY-MM-DD |
 |StS       | Depends on |            |
 |StF       |            | Depends on |
 |FtS       | Depends on |            |
 |FtF       |            | Depends on |
 
+
+#### Format
+
+Issue `#25`
+
+```yml
+depends on: #14
+start: YYYY-MM-DD
+end:   YYYY-MM-DD
+
+Explanation of issue
+```
 
 
 
@@ -127,3 +139,4 @@ https://docs.github.com/en/rest/reference/issues#list-repository-issues
 - https://en.wikipedia.org/wiki/Gantt_chart
 - https://en.wikipedia.org/wiki/Work_breakdown_structure
 - https://en.wikipedia.org/wiki/Dependency_(project_management)
+- https://en.wikipedia.org/wiki/ISO_8601
