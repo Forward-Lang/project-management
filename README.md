@@ -9,11 +9,11 @@ while the Y-axis is the timeline (could be days, weeks, months, etc.).
 The magnitude of each bar is the duration of the task.  
 
 A task may have a start- and end-date,  
-it may also have an indication of its progress,  
+it may also have an indication of its progress, [TODO]  
 and its dependencies.  
 
 > NB: A task's start- and end-date,  
-> are __not__ the same as its creation- and due-date.
+> are __not__ the same as its creation- and due-date. [TODO]
 
 For defining dependencies and in turn progress,  
 Gantt charts usually rely on a work-breakdown structure.  
@@ -30,11 +30,13 @@ a project definition should contain 100% of the necessary actions to complete th
 
 
 * Start to Start: When Task A starts then Task B starts
+* [TODO: StF]
 * Finish to Start: When Task A finishes then Task B starts
 * Finish to Finish: When Task A finishes then Task B finishes 
 
 Finish to Start, is the traditional sequential approach to task management.  
-Start to Start, and Finish to Finish, allow for parallel execution of tasks.  
+Start to Start, and Finish to Finish, allow for parallel execution of tasks.
+[TODO: StF]
 
 ![GanttChartAnatomy](https://upload.wikimedia.org/wikipedia/commons/5/57/GanttChartAnatomy.svg)
 
@@ -106,12 +108,13 @@ Here is an example using StS, FtS, and FtF
 * Finish to Start: Start-date depends on another task
 * Finish to Finish: End-date depends on another task
 
-|Type|Start|End|
-|----|-----|---|
-|StS | X   |   |
-|StF |     | X |
-|FtS | X   |   |
-|FtF |     | X |
+|Dependency|Start       |End         |
+|----------|------------|------------|
+|None      | YYYY:MM:DD | YYYY:MM:DD |
+|StS       | Depends on |            |
+|StF       |            | Depends on |
+|FtS       | Depends on |            |
+|FtF       |            | Depends on |
 
 
 
