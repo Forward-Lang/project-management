@@ -129,6 +129,34 @@ end:   YYYY-MM-DD
 Explanation of issue
 ```
 
+## Graph
+
+A naive implementation would set the duration of a parent task  
+to the sum of the duration its children, due to the 100% rule.  
+Unfortunately this doesn't take into account slack/buffer time, eg weekends.
+
+A parent task has an implied StS and FtF relationship with its children.  
+A parent task starts when the first child task starts, and  
+ends when the last child task ends.
+
+### Every task has a dependency?
+
+If I had to create a Gantt chart from a simple markdown list,
+this is how I would specify it:
+
+1. Task A: Starts with Task B, Ends with Task D
+  1. Task B: 
+  2. Task C: Starts on completion of Task B 
+  3. Task D: Starts on completion of Task C
+2. Task E: Starts on completion of Task A & Starts with Task F, Ends with Task G
+  1. Task F: 
+  2. Task G: Starts on completion of Task F
+3. Task H: Starts on completion of Task E
+  * Task I
+  * Task J
+  * Task K
+
+
 
 
 ## Github issues
