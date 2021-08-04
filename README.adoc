@@ -1,5 +1,6 @@
 # project-management
 :toc: preamble
+:toclevels: 4
 
 Create a Gantt Chart from Github issues
 
@@ -121,6 +122,22 @@ Here is an example using StS, FtS, and FtF
 |FtF       |            | Depends on 
 |====
 
+#### Bla?
+
+A task may have:
+
+- a `start-time`,
+- a `duration`,
+- an `end-time`, which is the `start-time` + `duration`
+- and dependencies
+
+for simplicity's sake let's just consider Finish-to-Start dependencies.
+This affects the `start-time`,
+ie the `start-time` is set to the `end-time` of its dependent task.
+So, in that case
+(since `end-time` is affected by `start-time` which in turn is affected by another task)
+the two pieces of information worth specifying is the depedent task and the `duration`
+
 
 #### Format
 
@@ -167,15 +184,6 @@ this is how I would specify it:
 ## Github issues
 https://docs.github.com/en/rest/reference/issues#list-repository-issues
 
-
-## Bla?
-
-A task may have:
-
-- a `start-time`,
-- a `duration`,
-- an `end-time`, which is the `start-time` + `duration`
-- and dependencies
 
 ## For more info, see:
 - https://en.wikipedia.org/wiki/Gantt_chart
