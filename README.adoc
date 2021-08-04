@@ -150,17 +150,6 @@ What about with other sorts of time dependencies?
 |FtF       | End - Duration | Depends on       |
 |====
 
-#### Format
-
-Issue `#25`
-
-```yml
-depends on: #14 completion
-start: YYYY-MM-DD
-end:   YYYY-MM-DD
-
-Explanation of issue
-```
 
 ## Graph
 
@@ -195,6 +184,17 @@ this is how I would specify it:
 ## Github issues
 https://docs.github.com/en/rest/reference/issues#list-repository-issues
 
+### Format
+
+Issue `#25`
+
+```yml
+depends on: #14 completion
+start: YYYY-MM-DD
+end:   YYYY-MM-DD
+
+Explanation of issue
+```
 
 ## For more info, see:
 - https://en.wikipedia.org/wiki/Gantt_chart
