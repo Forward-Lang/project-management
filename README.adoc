@@ -122,7 +122,7 @@ Here is an example using StS, FtS, and FtF
 |FtF       |            | Depends on 
 |====
 
-#### Bla?
+#### More complex example
 
 A task may have:
 
@@ -131,13 +131,24 @@ A task may have:
 - an `end-time`, which is the `start-time` + `duration`
 - and dependencies
 
-for simplicity's sake let's just consider Finish-to-Start dependencies.
+For simplicity's sake let's just consider Finish-to-Start dependencies.
 This affects the `start-time`,
 ie the `start-time` is set to the `end-time` of its dependent task.
 So, in that case
 (since `end-time` is affected by `start-time` which in turn is affected by another task)
-the two pieces of information worth specifying is the depedent task and the `duration`
+the two pieces of information worth specifying is the depedent task and the `duration`.
 
+What about with other sorts of time dependencies?
+
+|====
+|Dependency|Start           |End               |Duration
+
+|None      | YYYY-MM-DD     | YYYY-MM-DD       |
+|StS       | Depends on     | Start + Duration |
+|StF       | End - Duration | Depends on       |
+|FtS       | Depends on     | Start + Duration |
+|FtF       | End - Duration | Depends on       |
+|====
 
 #### Format
 
