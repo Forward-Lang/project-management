@@ -31,7 +31,7 @@ a project definition should contain 100% of the necessary actions to complete th
 
 ### Time-dependencies
 
-[TODO: explain]
+[TODO: explain] 
 
 * Start to Start: When Task A starts then Task B starts
 * [TODO: StF]
