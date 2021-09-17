@@ -4,7 +4,7 @@ Create a Gantt Chart from Github issues
 
 [view demo]
 
-[view demo]: google.com
+[view demo]: https://forward-lang.github.io/project-management/
 
 ## Features
 
