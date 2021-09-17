@@ -23,3 +23,4 @@ Create a Gantt Chart from Github issues
 - [ ] add task dependencies functionality
 - [ ] add buttons to change view mode: Quarter Day, Half Day, Day, Week, Month 
 - [ ] add title and favicon to webpage, make it less ugly ;)
+- [ ] add custom popup that displays an issue's body
