@@ -8,10 +8,10 @@ Create a Gantt Chart from Github issues
 
 ## Features
 
-- Free
-- Open Source
-- No hosting required
-- Self-contained html file
+- 💰 Free
+- 📖 Open Source
+- 🗄️ No hosting required
+- 🐣 Self-contained html file
 
 ## TODO
 
