@@ -46,7 +46,7 @@
                                                                         return {_url: html_url,
                                                                                 id: number,
                                                                                 name: title,
-                                                                                progress: progression(state),
+                                                                                progress: progression(state),    // convert from open/close to 0-100
                                                                                 start: time_format(created_at),  // convert from YYYY-MM-DDTHH:mm:ssZ to YYYY-MM-DD
                                                                                 end: time_format(closed_at),     // convert from YYYY-MM-DDTHH:mm:ssZ to YYYY-MM-DD
                                                                                 _note: body}})
