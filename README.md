@@ -16,6 +16,7 @@ Create a Gantt Chart from Github issues
 - 📖 Open Source
 - 🗄️ No hosting required
 - 🐣 Self-contained html file
+- 🧠 Takes into account neurodiversity
 
 ## TODO
 
