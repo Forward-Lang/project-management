@@ -19,6 +19,7 @@ Create a Gantt Chart from Github issues
 
 ## TODO
 
+- [ ] add option to sort by dopamine, increasing productivity for people with ADHD 
 - [ ] add a text form, so that others can input their repos
 - [ ] add task dependencies functionality
 - [ ] add buttons to change view mode: Quarter Day, Half Day, Day, Week, Month 
